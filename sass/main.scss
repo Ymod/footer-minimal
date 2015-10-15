@@ -1,0 +1,61 @@
+$white: #fff;
+$color_deep_cerulean_approx: #016bb6;
+$color_robins_egg_blue_approx: #08c1e2;
+$color_valencia_approx: #d94b34;
+.footer-minimal {
+	padding-top: 40px;
+	padding-bottom: 30px;
+	.brand-img {
+		margin: 0 auto;
+		width: 150px;
+	}
+}
+.big-social {
+	margin-top: 20px;
+	.social-item {
+		text-align: center;
+		a {
+			display: block;
+			border-radius: 4px;
+			padding: 18px;
+			color: $white;
+			font-size: 22px;
+			text-decoration: none;
+			h4 {
+				color: $white;
+				visibility: hidden;
+				margin-bottom: 0;
+			}
+			&:hover h4 {
+				visibility: visible;
+			}
+			&:focus h4 {
+				visibility: visible;
+			}
+		}
+		&.facebook a {
+			&:hover {
+				background-color: darken($color_deep_cerulean_approx, 10%);
+			}
+			&:focus {
+				background-color: $color_deep_cerulean_approx;
+			}
+		}
+		&.twitter a {
+			&:hover {
+				background-color: darken($color_robins_egg_blue_approx, 10%);
+			}
+			&:focus {
+				background-color: $color_robins_egg_blue_approx;
+			}
+		}
+		&.google a {
+			&:hover {
+				background-color: darken($color_valencia_approx, 10%);
+			}
+			&:focus {
+				background-color: $color_valencia_approx;
+			}
+		}
+	}
+}
